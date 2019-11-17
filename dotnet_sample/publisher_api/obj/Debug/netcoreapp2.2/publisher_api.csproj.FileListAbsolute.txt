@@ -1,0 +1,14 @@
+c:\devel\checkout\api-games\dotnet_sample\publisher_api\bin\Debug\netcoreapp2.2\publisher_api.deps.json
+c:\devel\checkout\api-games\dotnet_sample\publisher_api\bin\Debug\netcoreapp2.2\publisher_api.runtimeconfig.json
+c:\devel\checkout\api-games\dotnet_sample\publisher_api\bin\Debug\netcoreapp2.2\publisher_api.runtimeconfig.dev.json
+c:\devel\checkout\api-games\dotnet_sample\publisher_api\bin\Debug\netcoreapp2.2\publisher_api.dll
+c:\devel\checkout\api-games\dotnet_sample\publisher_api\bin\Debug\netcoreapp2.2\publisher_api.pdb
+c:\devel\checkout\api-games\dotnet_sample\publisher_api\obj\Debug\netcoreapp2.2\publisher_api.csprojAssemblyReference.cache
+c:\devel\checkout\api-games\dotnet_sample\publisher_api\obj\Debug\netcoreapp2.2\publisher_api.csproj.CoreCompileInputs.cache
+c:\devel\checkout\api-games\dotnet_sample\publisher_api\obj\Debug\netcoreapp2.2\publisher_api.RazorAssemblyInfo.cache
+c:\devel\checkout\api-games\dotnet_sample\publisher_api\obj\Debug\netcoreapp2.2\publisher_api.RazorAssemblyInfo.cs
+c:\devel\checkout\api-games\dotnet_sample\publisher_api\obj\Debug\netcoreapp2.2\publisher_api.AssemblyInfoInputs.cache
+c:\devel\checkout\api-games\dotnet_sample\publisher_api\obj\Debug\netcoreapp2.2\publisher_api.AssemblyInfo.cs
+c:\devel\checkout\api-games\dotnet_sample\publisher_api\obj\Debug\netcoreapp2.2\publisher_api.RazorTargetAssemblyInfo.cache
+c:\devel\checkout\api-games\dotnet_sample\publisher_api\obj\Debug\netcoreapp2.2\publisher_api.dll
+c:\devel\checkout\api-games\dotnet_sample\publisher_api\obj\Debug\netcoreapp2.2\publisher_api.pdb
