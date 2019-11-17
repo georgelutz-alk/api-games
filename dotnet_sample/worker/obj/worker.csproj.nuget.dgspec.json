@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "c:\\devel\\checkout\\api-games\\dotnet_sample\\worker\\worker.csproj": {}
+  },
+  "projects": {
+    "c:\\devel\\checkout\\api-games\\dotnet_sample\\worker\\worker.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\devel\\checkout\\api-games\\dotnet_sample\\worker\\worker.csproj",
+        "projectName": "worker",
+        "projectPath": "c:\\devel\\checkout\\api-games\\dotnet_sample\\worker\\worker.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "c:\\devel\\checkout\\api-games\\dotnet_sample\\worker\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "(, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

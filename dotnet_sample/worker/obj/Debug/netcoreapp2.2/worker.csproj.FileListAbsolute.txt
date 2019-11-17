@@ -1,0 +1,11 @@
+c:\devel\checkout\api-games\dotnet_sample\worker\bin\Debug\netcoreapp2.2\worker.deps.json
+c:\devel\checkout\api-games\dotnet_sample\worker\bin\Debug\netcoreapp2.2\worker.runtimeconfig.json
+c:\devel\checkout\api-games\dotnet_sample\worker\bin\Debug\netcoreapp2.2\worker.runtimeconfig.dev.json
+c:\devel\checkout\api-games\dotnet_sample\worker\bin\Debug\netcoreapp2.2\worker.dll
+c:\devel\checkout\api-games\dotnet_sample\worker\bin\Debug\netcoreapp2.2\worker.pdb
+c:\devel\checkout\api-games\dotnet_sample\worker\obj\Debug\netcoreapp2.2\worker.csprojAssemblyReference.cache
+c:\devel\checkout\api-games\dotnet_sample\worker\obj\Debug\netcoreapp2.2\worker.csproj.CoreCompileInputs.cache
+c:\devel\checkout\api-games\dotnet_sample\worker\obj\Debug\netcoreapp2.2\worker.AssemblyInfoInputs.cache
+c:\devel\checkout\api-games\dotnet_sample\worker\obj\Debug\netcoreapp2.2\worker.AssemblyInfo.cs
+c:\devel\checkout\api-games\dotnet_sample\worker\obj\Debug\netcoreapp2.2\worker.dll
+c:\devel\checkout\api-games\dotnet_sample\worker\obj\Debug\netcoreapp2.2\worker.pdb
