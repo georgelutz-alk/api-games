@@ -934,6 +934,70 @@
 			],
 			"description": "https://developer.trimblemaps.com/restful-apis/routing/route-reports/calc-miles/",
 			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "MapBox_APIs",
+			"item": [
+				{
+					"name": "get-geocode",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.mapbox.com/geocoding/v5/mapbox.places/Los%20Angeles.json?access_token={{env.mapbox.accesstoken}}\n",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mapbox",
+								"com"
+							],
+							"path": [
+								"geocoding",
+								"v5",
+								"mapbox.places",
+								"Los%20Angeles.json"
+							],
+							"query": [
+								{
+									"key": "access_token",
+									"value": "{{env.mapbox.accesstoken}}\n"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-reverse-geocode",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.mapbox.com/geocoding/v5/mapbox.places/-73.989,40.733.json?access_token={{env.mapbox.accesstoken}}\n",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mapbox",
+								"com"
+							],
+							"path": [
+								"geocoding",
+								"v5",
+								"mapbox.places",
+								"-73.989,40.733.json"
+							],
+							"query": [
+								{
+									"key": "access_token",
+									"value": "{{env.mapbox.accesstoken}}\n"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
 		}
 	],
 	"protocolProfileBehavior": {}
