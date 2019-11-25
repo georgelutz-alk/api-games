@@ -723,7 +723,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.NETCore.App >= 2.2.0",
-      "Newtonsoft.Json"
+      "Newtonsoft.Json >= 12.0.3"
     ]
   },
   "packageFolders": {
@@ -733,11 +733,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\devel\\checkout\\api-games\\dotnet_sample\\worker\\worker.csproj",
+      "projectUniqueName": "C:\\devel\\checkout\\api-games\\dotnet_sample\\worker\\worker.csproj",
       "projectName": "worker",
-      "projectPath": "c:\\devel\\checkout\\api-games\\dotnet_sample\\worker\\worker.csproj",
+      "projectPath": "C:\\devel\\checkout\\api-games\\dotnet_sample\\worker\\worker.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "c:\\devel\\checkout\\api-games\\dotnet_sample\\worker\\obj\\",
+      "outputPath": "C:\\devel\\checkout\\api-games\\dotnet_sample\\worker\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -773,7 +773,7 @@
           },
           "Newtonsoft.Json": {
             "target": "Package",
-            "version": "(, )"
+            "version": "[12.0.3, )"
           }
         },
         "imports": [
