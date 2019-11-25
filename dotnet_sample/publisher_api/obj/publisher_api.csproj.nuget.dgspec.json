@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\devel\\checkout\\api-games\\dotnet_sample\\publisher_api\\publisher_api.csproj": {}
+    "C:\\devel\\checkout\\api-games\\dotnet_sample\\publisher_api\\publisher_api.csproj": {}
   },
   "projects": {
-    "c:\\devel\\checkout\\api-games\\dotnet_sample\\publisher_api\\publisher_api.csproj": {
+    "C:\\devel\\checkout\\api-games\\dotnet_sample\\publisher_api\\publisher_api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\devel\\checkout\\api-games\\dotnet_sample\\publisher_api\\publisher_api.csproj",
+        "projectUniqueName": "C:\\devel\\checkout\\api-games\\dotnet_sample\\publisher_api\\publisher_api.csproj",
         "projectName": "publisher_api",
-        "projectPath": "c:\\devel\\checkout\\api-games\\dotnet_sample\\publisher_api\\publisher_api.csproj",
+        "projectPath": "C:\\devel\\checkout\\api-games\\dotnet_sample\\publisher_api\\publisher_api.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "c:\\devel\\checkout\\api-games\\dotnet_sample\\publisher_api\\obj\\",
+        "outputPath": "C:\\devel\\checkout\\api-games\\dotnet_sample\\publisher_api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

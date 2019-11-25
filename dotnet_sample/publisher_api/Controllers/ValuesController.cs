@@ -25,11 +25,18 @@ namespace publisher_api.Controllers
         }
 
         // POST api/values
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
+        // [HttpPost]
+        // public void Post([FromBody] string value)
+        // {
+        // }
 
+        [HttpPost]
+        public IActionResult Post([FromBody] string payload)
+        {
+            // IActionResult returns an HTTP reponse code.
+            return Ok("{\"success\": \"true\"}");
+        }
+        
         // PUT api/values/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
