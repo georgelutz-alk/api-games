@@ -1,0 +1,440 @@
+{
+	"info": {
+		"_postman_id": "dd9c873b-91aa-46d2-ae66-085131ac4a79",
+		"name": "Web_Map_APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "HERE_APIs",
+			"item": [
+				{
+					"name": "get-geocode",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://geocoder.api.here.com/6.2/geocode.json?app_id=oabSYEbPGtLysvXCZmH9&app_code=BEBz_idi_Ar6Mk__MO2VkA&searchtext=425+W+Randolph+Chicago",
+							"protocol": "https",
+							"host": [
+								"geocoder",
+								"api",
+								"here",
+								"com"
+							],
+							"path": [
+								"6.2",
+								"geocode.json"
+							],
+							"query": [
+								{
+									"key": "app_id",
+									"value": "oabSYEbPGtLysvXCZmH9"
+								},
+								{
+									"key": "app_code",
+									"value": "BEBz_idi_Ar6Mk__MO2VkA"
+								},
+								{
+									"key": "searchtext",
+									"value": "425+W+Randolph+Chicago"
+								}
+							]
+						},
+						"description": "https://developer.here.com/projects/PROD-3d4232a1-bf14-4104-a2b4-d76902cd46da"
+					},
+					"response": []
+				},
+				{
+					"name": "get-geocode-in-area",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://geocoder.api.here.com/6.2/geocode.json?searchtext=1%20main&mapview=42.3902%2C-71.1293%3B42.3312%2C-71.0228&app_id=oabSYEbPGtLysvXCZmH9&app_code=BEBz_idi_Ar6Mk__MO2VkA",
+							"protocol": "https",
+							"host": [
+								"geocoder",
+								"api",
+								"here",
+								"com"
+							],
+							"path": [
+								"6.2",
+								"geocode.json"
+							],
+							"query": [
+								{
+									"key": "searchtext",
+									"value": "1%20main"
+								},
+								{
+									"key": "mapview",
+									"value": "42.3902%2C-71.1293%3B42.3312%2C-71.0228"
+								},
+								{
+									"key": "app_id",
+									"value": "oabSYEbPGtLysvXCZmH9"
+								},
+								{
+									"key": "app_code",
+									"value": "BEBz_idi_Ar6Mk__MO2VkA"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-reverse-geocode",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://reverse.geocoder.api.here.com/6.2/reversegeocode.json?pos=42.3902%2C-71.1293&app_id=oabSYEbPGtLysvXCZmH9&app_code=BEBz_idi_Ar6Mk__MO2VkA&mode=retrieveAll&prox=42.3902%2C-71.1293%2C10",
+							"protocol": "https",
+							"host": [
+								"reverse",
+								"geocoder",
+								"api",
+								"here",
+								"com"
+							],
+							"path": [
+								"6.2",
+								"reversegeocode.json"
+							],
+							"query": [
+								{
+									"key": "pos",
+									"value": "42.3902%2C-71.1293"
+								},
+								{
+									"key": "app_id",
+									"value": "oabSYEbPGtLysvXCZmH9"
+								},
+								{
+									"key": "app_code",
+									"value": "BEBz_idi_Ar6Mk__MO2VkA"
+								},
+								{
+									"key": "mode",
+									"value": "retrieveAll"
+								},
+								{
+									"key": "prox",
+									"value": "42.3902%2C-71.1293%2C10"
+								}
+							]
+						},
+						"description": "https://developer.here.com/documentation/geocoder/dev_guide/topics/resource-reverse-geocode.html"
+					},
+					"response": []
+				},
+				{
+					"name": "get-route",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://route.api.here.com/routing/7.2/calculateroute.json?app_id=oabSYEbPGtLysvXCZmH9&app_code=BEBz_idi_Ar6Mk__MO2VkA&waypoint0=geo!52.5,13.2&waypoint1=geo!52.5,13.45&mode=fastest;car;traffic:disabled",
+							"protocol": "https",
+							"host": [
+								"route",
+								"api",
+								"here",
+								"com"
+							],
+							"path": [
+								"routing",
+								"7.2",
+								"calculateroute.json"
+							],
+							"query": [
+								{
+									"key": "app_id",
+									"value": "oabSYEbPGtLysvXCZmH9"
+								},
+								{
+									"key": "app_code",
+									"value": "BEBz_idi_Ar6Mk__MO2VkA"
+								},
+								{
+									"key": "waypoint0",
+									"value": "geo!52.5,13.2"
+								},
+								{
+									"key": "waypoint1",
+									"value": "geo!52.5,13.45"
+								},
+								{
+									"key": "mode",
+									"value": "fastest;car;traffic:disabled"
+								}
+							]
+						},
+						"description": "https://developer.here.com/documentation/routing/dev_guide/topics/request-a-simple-route.html"
+					},
+					"response": []
+				},
+				{
+					"name": "get-truck-route",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://route.api.here.com/routing/7.2/calculateroute.json?app_id=oabSYEbPGtLysvXCZmH9&app_code=BEBz_idi_Ar6Mk__MO2VkA&waypoint0=geo!52.5,13.4&waypoint1=geo!52.5,13.45&mode=fastest;truck;traffic:disabled&limitedWeight=30.5&height=4.25&shippedHazardousGoods=harmfulToWater",
+							"protocol": "https",
+							"host": [
+								"route",
+								"api",
+								"here",
+								"com"
+							],
+							"path": [
+								"routing",
+								"7.2",
+								"calculateroute.json"
+							],
+							"query": [
+								{
+									"key": "app_id",
+									"value": "oabSYEbPGtLysvXCZmH9"
+								},
+								{
+									"key": "app_code",
+									"value": "BEBz_idi_Ar6Mk__MO2VkA"
+								},
+								{
+									"key": "waypoint0",
+									"value": "geo!52.5,13.4"
+								},
+								{
+									"key": "waypoint1",
+									"value": "geo!52.5,13.45"
+								},
+								{
+									"key": "mode",
+									"value": "fastest;truck;traffic:disabled"
+								},
+								{
+									"key": "limitedWeight",
+									"value": "30.5"
+								},
+								{
+									"key": "height",
+									"value": "4.25"
+								},
+								{
+									"key": "shippedHazardousGoods",
+									"value": "harmfulToWater"
+								}
+							]
+						},
+						"description": "https://developer.here.com/documentation/routing/dev_guide/topics/request-a-truck-route.html"
+					},
+					"response": []
+				},
+				{
+					"name": "get-map-image",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://image.maps.api.here.com/mia/1.6/mapview?app_id=oabSYEbPGtLysvXCZmH9&app_code=BEBz_idi_Ar6Mk__MO2VkA&c=52.431,13.3845&z=16",
+							"protocol": "https",
+							"host": [
+								"image",
+								"maps",
+								"api",
+								"here",
+								"com"
+							],
+							"path": [
+								"mia",
+								"1.6",
+								"mapview"
+							],
+							"query": [
+								{
+									"key": "app_id",
+									"value": "oabSYEbPGtLysvXCZmH9"
+								},
+								{
+									"key": "app_code",
+									"value": "BEBz_idi_Ar6Mk__MO2VkA"
+								},
+								{
+									"key": "c",
+									"value": "52.431,13.3845"
+								},
+								{
+									"key": "z",
+									"value": "16"
+								}
+							]
+						},
+						"description": "https://developer.here.com/documentation/map-image/dev_guide/topics/examples-map-zoom-level.html"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Google_APIs",
+			"item": [
+				{
+					"name": "get-places",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=Museum%20of%20Contemporary%20Art%20Australia&inputtype=textquery&fields=photos,formatted_address,name,rating,opening_hours,geometry&key=AIzaSyAdYsguaBxyMm9HWSiU854O0fW5UAjIDqQ",
+							"protocol": "https",
+							"host": [
+								"maps",
+								"googleapis",
+								"com"
+							],
+							"path": [
+								"maps",
+								"api",
+								"place",
+								"findplacefromtext",
+								"json"
+							],
+							"query": [
+								{
+									"key": "input",
+									"value": "Museum%20of%20Contemporary%20Art%20Australia"
+								},
+								{
+									"key": "inputtype",
+									"value": "textquery"
+								},
+								{
+									"key": "fields",
+									"value": "photos,formatted_address,name,rating,opening_hours,geometry"
+								},
+								{
+									"key": "key",
+									"value": "AIzaSyAdYsguaBxyMm9HWSiU854O0fW5UAjIDqQ"
+								}
+							]
+						},
+						"description": "https://developers.google.com/places/web-service/search?hl=en_US"
+					},
+					"response": []
+				},
+				{
+					"name": "get-reverse-geocode",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=AIzaSyAdYsguaBxyMm9HWSiU854O0fW5UAjIDqQ",
+							"protocol": "https",
+							"host": [
+								"maps",
+								"googleapis",
+								"com"
+							],
+							"path": [
+								"maps",
+								"api",
+								"geocode",
+								"json"
+							],
+							"query": [
+								{
+									"key": "latlng",
+									"value": "40.714224,-73.961452"
+								},
+								{
+									"key": "key",
+									"value": "AIzaSyAdYsguaBxyMm9HWSiU854O0fW5UAjIDqQ"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-directions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://maps.googleapis.com/maps/api/directions/json?origin=Disneyland&destination=Universal+Studios+Hollywood&key=AIzaSyAdYsguaBxyMm9HWSiU854O0fW5UAjIDqQ",
+							"protocol": "https",
+							"host": [
+								"maps",
+								"googleapis",
+								"com"
+							],
+							"path": [
+								"maps",
+								"api",
+								"directions",
+								"json"
+							],
+							"query": [
+								{
+									"key": "origin",
+									"value": "Disneyland"
+								},
+								{
+									"key": "destination",
+									"value": "Universal+Studios+Hollywood"
+								},
+								{
+									"key": "key",
+									"value": "AIzaSyAdYsguaBxyMm9HWSiU854O0fW5UAjIDqQ"
+								}
+							]
+						},
+						"description": "https://maps.googleapis.com/maps/api/directions/json?origin=Disneyland&destination=Universal+Studios+Hollywood&key=AIzaSyAdYsguaBxyMm9HWSiU854O0fW5UAjIDqQ"
+					},
+					"response": []
+				},
+				{
+					"name": "get-geocode",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,\n+Mountain+View,+CA&key=AIzaSyAdYsguaBxyMm9HWSiU854O0fW5UAjIDqQ",
+							"protocol": "https",
+							"host": [
+								"maps",
+								"googleapis",
+								"com"
+							],
+							"path": [
+								"maps",
+								"api",
+								"geocode",
+								"json"
+							],
+							"query": [
+								{
+									"key": "address",
+									"value": "1600+Amphitheatre+Parkway,\n+Mountain+View,+CA"
+								},
+								{
+									"key": "key",
+									"value": "AIzaSyAdYsguaBxyMm9HWSiU854O0fW5UAjIDqQ"
+								}
+							]
+						},
+						"description": "https://developers.google.com/maps/documentation/geocoding/intro?hl=en_US"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
