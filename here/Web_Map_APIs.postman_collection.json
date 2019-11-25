@@ -14,7 +14,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://geocoder.api.here.com/6.2/geocode.json?app_id=oabSYEbPGtLysvXCZmH9&app_code=BEBz_idi_Ar6Mk__MO2VkA&searchtext=425+W+Randolph+Chicago",
+							"raw": "https://geocoder.api.here.com/6.2/geocode.json?app_id={{env.appid.here}}&app_code={{env.appcode.here}}&searchtext=425+W+Randolph+Chicago",
 							"protocol": "https",
 							"host": [
 								"geocoder",
@@ -29,11 +29,11 @@
 							"query": [
 								{
 									"key": "app_id",
-									"value": "oabSYEbPGtLysvXCZmH9"
+									"value": "{{env.appid.here}}"
 								},
 								{
 									"key": "app_code",
-									"value": "BEBz_idi_Ar6Mk__MO2VkA"
+									"value": "{{env.appcode.here}}"
 								},
 								{
 									"key": "searchtext",
@@ -51,7 +51,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://geocoder.api.here.com/6.2/geocode.json?searchtext=1%20main&mapview=42.3902%2C-71.1293%3B42.3312%2C-71.0228&app_id=oabSYEbPGtLysvXCZmH9&app_code=BEBz_idi_Ar6Mk__MO2VkA",
+							"raw": "https://geocoder.api.here.com/6.2/geocode.json?searchtext=1%20main&mapview=42.3902%2C-71.1293%3B42.3312%2C-71.0228&app_id={{env.appid.here}}&app_code={{env.appcode.here}}",
 							"protocol": "https",
 							"host": [
 								"geocoder",
@@ -74,11 +74,11 @@
 								},
 								{
 									"key": "app_id",
-									"value": "oabSYEbPGtLysvXCZmH9"
+									"value": "{{env.appid.here}}"
 								},
 								{
 									"key": "app_code",
-									"value": "BEBz_idi_Ar6Mk__MO2VkA"
+									"value": "{{env.appcode.here}}"
 								}
 							]
 						}
@@ -91,7 +91,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://reverse.geocoder.api.here.com/6.2/reversegeocode.json?pos=42.3902%2C-71.1293&app_id=oabSYEbPGtLysvXCZmH9&app_code=BEBz_idi_Ar6Mk__MO2VkA&mode=retrieveAll&prox=42.3902%2C-71.1293%2C10",
+							"raw": "https://reverse.geocoder.api.here.com/6.2/reversegeocode.json?pos=42.3902%2C-71.1293&app_id={{env.appid.here}}&app_code={{env.appcode.here}}&mode=retrieveAll&prox=42.3902%2C-71.1293%2C10",
 							"protocol": "https",
 							"host": [
 								"reverse",
@@ -111,11 +111,11 @@
 								},
 								{
 									"key": "app_id",
-									"value": "oabSYEbPGtLysvXCZmH9"
+									"value": "{{env.appid.here}}"
 								},
 								{
 									"key": "app_code",
-									"value": "BEBz_idi_Ar6Mk__MO2VkA"
+									"value": "{{env.appcode.here}}"
 								},
 								{
 									"key": "mode",
@@ -137,7 +137,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://route.api.here.com/routing/7.2/calculateroute.json?app_id=oabSYEbPGtLysvXCZmH9&app_code=BEBz_idi_Ar6Mk__MO2VkA&waypoint0=geo!52.5,13.2&waypoint1=geo!52.5,13.45&mode=fastest;car;traffic:disabled",
+							"raw": "https://route.api.here.com/routing/7.2/calculateroute.json?app_id={{env.appid.here}}&app_code={{env.appcode.here}}&waypoint0=geo!52.5,13.2&waypoint1=geo!52.5,13.45&mode=fastest;car;traffic:disabled",
 							"protocol": "https",
 							"host": [
 								"route",
@@ -153,11 +153,11 @@
 							"query": [
 								{
 									"key": "app_id",
-									"value": "oabSYEbPGtLysvXCZmH9"
+									"value": "{{env.appid.here}}"
 								},
 								{
 									"key": "app_code",
-									"value": "BEBz_idi_Ar6Mk__MO2VkA"
+									"value": "{{env.appcode.here}}"
 								},
 								{
 									"key": "waypoint0",
@@ -183,7 +183,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://route.api.here.com/routing/7.2/calculateroute.json?app_id=oabSYEbPGtLysvXCZmH9&app_code=BEBz_idi_Ar6Mk__MO2VkA&waypoint0=geo!52.5,13.4&waypoint1=geo!52.5,13.45&mode=fastest;truck;traffic:disabled&limitedWeight=30.5&height=4.25&shippedHazardousGoods=harmfulToWater",
+							"raw": "https://route.api.here.com/routing/7.2/calculateroute.json?app_id={{env.appid.here}}&app_code={{env.appcode.here}}&waypoint0=geo!52.5,13.4&waypoint1=geo!52.5,13.45&mode=fastest;truck;traffic:disabled&limitedWeight=30.5&height=4.25&shippedHazardousGoods=harmfulToWater",
 							"protocol": "https",
 							"host": [
 								"route",
@@ -199,11 +199,11 @@
 							"query": [
 								{
 									"key": "app_id",
-									"value": "oabSYEbPGtLysvXCZmH9"
+									"value": "{{env.appid.here}}"
 								},
 								{
 									"key": "app_code",
-									"value": "BEBz_idi_Ar6Mk__MO2VkA"
+									"value": "{{env.appcode.here}}"
 								},
 								{
 									"key": "waypoint0",
@@ -241,7 +241,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://image.maps.api.here.com/mia/1.6/mapview?app_id=oabSYEbPGtLysvXCZmH9&app_code=BEBz_idi_Ar6Mk__MO2VkA&c=52.431,13.3845&z=16",
+							"raw": "https://image.maps.api.here.com/mia/1.6/mapview?app_id={{env.appid.here}}&app_code={{env.appcode.here}}&c=52.431,13.3845&z=16",
 							"protocol": "https",
 							"host": [
 								"image",
@@ -258,11 +258,11 @@
 							"query": [
 								{
 									"key": "app_id",
-									"value": "oabSYEbPGtLysvXCZmH9"
+									"value": "{{env.appid.here}}"
 								},
 								{
 									"key": "app_code",
-									"value": "BEBz_idi_Ar6Mk__MO2VkA"
+									"value": "{{env.appcode.here}}"
 								},
 								{
 									"key": "c",
@@ -290,7 +290,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=Museum%20of%20Contemporary%20Art%20Australia&inputtype=textquery&fields=photos,formatted_address,name,rating,opening_hours,geometry&key=AIzaSyAdYsguaBxyMm9HWSiU854O0fW5UAjIDqQ",
+							"raw": "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=Museum%20of%20Contemporary%20Art%20Australia&inputtype=textquery&fields=photos,formatted_address,name,rating,opening_hours,geometry&key={{env.apikey.google}}",
 							"protocol": "https",
 							"host": [
 								"maps",
@@ -319,7 +319,7 @@
 								},
 								{
 									"key": "key",
-									"value": "AIzaSyAdYsguaBxyMm9HWSiU854O0fW5UAjIDqQ"
+									"value": "{{env.apikey.google}}"
 								}
 							]
 						},
@@ -333,7 +333,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=AIzaSyAdYsguaBxyMm9HWSiU854O0fW5UAjIDqQ",
+							"raw": "https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key={{env.apikey.google}}",
 							"protocol": "https",
 							"host": [
 								"maps",
@@ -353,7 +353,7 @@
 								},
 								{
 									"key": "key",
-									"value": "AIzaSyAdYsguaBxyMm9HWSiU854O0fW5UAjIDqQ"
+									"value": "{{env.apikey.google}}"
 								}
 							]
 						}
@@ -366,7 +366,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://maps.googleapis.com/maps/api/directions/json?origin=Disneyland&destination=Universal+Studios+Hollywood&key=AIzaSyAdYsguaBxyMm9HWSiU854O0fW5UAjIDqQ",
+							"raw": "https://maps.googleapis.com/maps/api/directions/json?origin=Disneyland&destination=Universal+Studios+Hollywood&key={{env.apikey.google}}",
 							"protocol": "https",
 							"host": [
 								"maps",
@@ -390,7 +390,7 @@
 								},
 								{
 									"key": "key",
-									"value": "AIzaSyAdYsguaBxyMm9HWSiU854O0fW5UAjIDqQ"
+									"value": "{{env.apikey.google}}"
 								}
 							]
 						},
@@ -404,7 +404,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,\n+Mountain+View,+CA&key=AIzaSyAdYsguaBxyMm9HWSiU854O0fW5UAjIDqQ",
+							"raw": "https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,\n+Mountain+View,+CA&key={{env.apikey.google}}",
 							"protocol": "https",
 							"host": [
 								"maps",
@@ -424,7 +424,7 @@
 								},
 								{
 									"key": "key",
-									"value": "AIzaSyAdYsguaBxyMm9HWSiU854O0fW5UAjIDqQ"
+									"value": "{{env.apikey.google}}"
 								}
 							]
 						},
@@ -433,6 +433,506 @@
 					"response": []
 				}
 			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "TrimbleMAPS_APIs",
+			"item": [
+				{
+					"name": "get-routedistance",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "247F91E0D1091A41A313F0B00C2A88A2",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://pcmiler.alk.com/apis/rest/v1.0/Service.svc/route/routeReports?stops=-75.173297%2C39.942892%3B-74.83153%2C39.61703%3B-74.438942%2C39.362469&reports=CalcMiles&vehType=Truck&routeType=Shortest&hwyOnly=true&custRdSpeeds=false&overrideClass=FiftyThreeFoot&distUnits=Miles&fuelUnits=Gallons&avoidTolls=true&inclFerryDist=true&openBorders=true&restrOverrides=false&hazMat=Explosives&routeOpt=None&lang=ENUS&hubRouting=false&vehDimUnits=English&vehHeight=13%276%22&vehLength=53%27&vehWidth=96%22&vehWeight=14000&axles=8&truckConfig=none&LCV=false&inclTollData=true&fuelEconLoad=8.5&fuelEconEmpty=11.9&costPerFuelUnit=13&costGHG=5.2&costMaintLoad=12.2&costMaintEmpty=8.9&costTimeLoad=15.5&costTimeEmpty=12.6&exchangeRate=1.01&tollPlan=ezpass&region=NA&dataVersion=Current",
+							"protocol": "https",
+							"host": [
+								"pcmiler",
+								"alk",
+								"com"
+							],
+							"path": [
+								"apis",
+								"rest",
+								"v1.0",
+								"Service.svc",
+								"route",
+								"routeReports"
+							],
+							"query": [
+								{
+									"key": "stops",
+									"value": "-75.173297%2C39.942892%3B-74.83153%2C39.61703%3B-74.438942%2C39.362469"
+								},
+								{
+									"key": "reports",
+									"value": "CalcMiles"
+								},
+								{
+									"key": "vehType",
+									"value": "Truck"
+								},
+								{
+									"key": "routeType",
+									"value": "Shortest"
+								},
+								{
+									"key": "hwyOnly",
+									"value": "true"
+								},
+								{
+									"key": "custRdSpeeds",
+									"value": "false"
+								},
+								{
+									"key": "overrideClass",
+									"value": "FiftyThreeFoot"
+								},
+								{
+									"key": "distUnits",
+									"value": "Miles"
+								},
+								{
+									"key": "fuelUnits",
+									"value": "Gallons"
+								},
+								{
+									"key": "avoidTolls",
+									"value": "true"
+								},
+								{
+									"key": "inclFerryDist",
+									"value": "true"
+								},
+								{
+									"key": "openBorders",
+									"value": "true"
+								},
+								{
+									"key": "restrOverrides",
+									"value": "false"
+								},
+								{
+									"key": "hazMat",
+									"value": "Explosives"
+								},
+								{
+									"key": "routeOpt",
+									"value": "None"
+								},
+								{
+									"key": "lang",
+									"value": "ENUS"
+								},
+								{
+									"key": "hubRouting",
+									"value": "false"
+								},
+								{
+									"key": "vehDimUnits",
+									"value": "English"
+								},
+								{
+									"key": "vehHeight",
+									"value": "13%276%22"
+								},
+								{
+									"key": "vehLength",
+									"value": "53%27"
+								},
+								{
+									"key": "vehWidth",
+									"value": "96%22"
+								},
+								{
+									"key": "vehWeight",
+									"value": "14000"
+								},
+								{
+									"key": "axles",
+									"value": "8"
+								},
+								{
+									"key": "truckConfig",
+									"value": "none"
+								},
+								{
+									"key": "LCV",
+									"value": "false"
+								},
+								{
+									"key": "inclTollData",
+									"value": "true"
+								},
+								{
+									"key": "fuelEconLoad",
+									"value": "8.5"
+								},
+								{
+									"key": "fuelEconEmpty",
+									"value": "11.9"
+								},
+								{
+									"key": "costPerFuelUnit",
+									"value": "13"
+								},
+								{
+									"key": "costGHG",
+									"value": "5.2"
+								},
+								{
+									"key": "costMaintLoad",
+									"value": "12.2"
+								},
+								{
+									"key": "costMaintEmpty",
+									"value": "8.9"
+								},
+								{
+									"key": "costTimeLoad",
+									"value": "15.5"
+								},
+								{
+									"key": "costTimeEmpty",
+									"value": "12.6"
+								},
+								{
+									"key": "exchangeRate",
+									"value": "1.01"
+								},
+								{
+									"key": "tollPlan",
+									"value": "ezpass"
+								},
+								{
+									"key": "region",
+									"value": "NA"
+								},
+								{
+									"key": "dataVersion",
+									"value": "Current"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-directions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "247F91E0D1091A41A313F0B00C2A88A2",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://pcmiler.alk.com/apis/rest/v1.0/Service.svc//route/routeReports?stops=-75.173297%2C39.942892%3B-74.83153%2C39.61703%3B-74.438942%2C39.362469&reports=Directions&vehType=Truck&routeType=Shortest&hwyOnly=true&custRdSpeeds=false&overrideClass=FiftyThreeFoot&distUnits=Miles&fuelUnits=Gallons&avoidTolls=true&inclFerryDist=true&openBorders=true&restrOverrides=false&hazMat=Explosives&routeOpt=None&lang=ENUS&hubRouting=false&vehDimUnits=English&vehHeight=13%276%22&vehLength=53%27&vehWidth=96%22&vehWeight=14000&axles=8&truckConfig=none&LCV=false&inclTollData=true&fuelEconLoad=8.5&fuelEconEmpty=11.9&costPerFuelUnit=13&costGHG=5.2&costMaintLoad=12.2&costMaintEmpty=8.9&costTimeLoad=15.5&costTimeEmpty=12.6&exchangeRate=1.01&tollPlan=ezpass&region=NA&dataVersion=Current",
+							"protocol": "https",
+							"host": [
+								"pcmiler",
+								"alk",
+								"com"
+							],
+							"path": [
+								"apis",
+								"rest",
+								"v1.0",
+								"Service.svc",
+								"",
+								"route",
+								"routeReports"
+							],
+							"query": [
+								{
+									"key": "stops",
+									"value": "-75.173297%2C39.942892%3B-74.83153%2C39.61703%3B-74.438942%2C39.362469"
+								},
+								{
+									"key": "reports",
+									"value": "Directions"
+								},
+								{
+									"key": "vehType",
+									"value": "Truck"
+								},
+								{
+									"key": "routeType",
+									"value": "Shortest"
+								},
+								{
+									"key": "hwyOnly",
+									"value": "true"
+								},
+								{
+									"key": "custRdSpeeds",
+									"value": "false"
+								},
+								{
+									"key": "overrideClass",
+									"value": "FiftyThreeFoot"
+								},
+								{
+									"key": "distUnits",
+									"value": "Miles"
+								},
+								{
+									"key": "fuelUnits",
+									"value": "Gallons"
+								},
+								{
+									"key": "avoidTolls",
+									"value": "true"
+								},
+								{
+									"key": "inclFerryDist",
+									"value": "true"
+								},
+								{
+									"key": "openBorders",
+									"value": "true"
+								},
+								{
+									"key": "restrOverrides",
+									"value": "false"
+								},
+								{
+									"key": "hazMat",
+									"value": "Explosives"
+								},
+								{
+									"key": "routeOpt",
+									"value": "None"
+								},
+								{
+									"key": "lang",
+									"value": "ENUS"
+								},
+								{
+									"key": "hubRouting",
+									"value": "false"
+								},
+								{
+									"key": "vehDimUnits",
+									"value": "English"
+								},
+								{
+									"key": "vehHeight",
+									"value": "13%276%22"
+								},
+								{
+									"key": "vehLength",
+									"value": "53%27"
+								},
+								{
+									"key": "vehWidth",
+									"value": "96%22"
+								},
+								{
+									"key": "vehWeight",
+									"value": "14000"
+								},
+								{
+									"key": "axles",
+									"value": "8"
+								},
+								{
+									"key": "truckConfig",
+									"value": "none"
+								},
+								{
+									"key": "LCV",
+									"value": "false"
+								},
+								{
+									"key": "inclTollData",
+									"value": "true"
+								},
+								{
+									"key": "fuelEconLoad",
+									"value": "8.5"
+								},
+								{
+									"key": "fuelEconEmpty",
+									"value": "11.9"
+								},
+								{
+									"key": "costPerFuelUnit",
+									"value": "13"
+								},
+								{
+									"key": "costGHG",
+									"value": "5.2"
+								},
+								{
+									"key": "costMaintLoad",
+									"value": "12.2"
+								},
+								{
+									"key": "costMaintEmpty",
+									"value": "8.9"
+								},
+								{
+									"key": "costTimeLoad",
+									"value": "15.5"
+								},
+								{
+									"key": "costTimeEmpty",
+									"value": "12.6"
+								},
+								{
+									"key": "exchangeRate",
+									"value": "1.01"
+								},
+								{
+									"key": "tollPlan",
+									"value": "ezpass"
+								},
+								{
+									"key": "region",
+									"value": "NA"
+								},
+								{
+									"key": "dataVersion",
+									"value": "Current"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-geocode",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "247F91E0D1091A41A313F0B00C2A88A2",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://pcmiler.alk.com/apis/rest/v1.0/Service.svc/locations?street=1%20Independence%20Way&city=princeton&state=nj&country=US&postcode=08540&postcodeFilter=us&region=NA&dataset=Current",
+							"protocol": "https",
+							"host": [
+								"pcmiler",
+								"alk",
+								"com"
+							],
+							"path": [
+								"apis",
+								"rest",
+								"v1.0",
+								"Service.svc",
+								"locations"
+							],
+							"query": [
+								{
+									"key": "street",
+									"value": "1%20Independence%20Way"
+								},
+								{
+									"key": "city",
+									"value": "princeton"
+								},
+								{
+									"key": "state",
+									"value": "nj"
+								},
+								{
+									"key": "country",
+									"value": "US"
+								},
+								{
+									"key": "postcode",
+									"value": "08540"
+								},
+								{
+									"key": "postcodeFilter",
+									"value": "us"
+								},
+								{
+									"key": "region",
+									"value": "NA"
+								},
+								{
+									"key": "dataset",
+									"value": "Current"
+								}
+							]
+						},
+						"description": "https://developer.trimblemaps.com/restful-apis/location/geocoding-api/geocoding/"
+					},
+					"response": []
+				},
+				{
+					"name": "get-locations",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{env.apikey.trimble}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://pcmiler.alk.com/apis/rest/v1.0/Service.svc/locations/reverse?Coords=-75.163244%2C40.958188&matchNamedRoadsOnly=true&maxCleanupMiles=20&region=NA&dataset=Current&timestamp=2017-01-12%2017%3A43",
+							"protocol": "https",
+							"host": [
+								"pcmiler",
+								"alk",
+								"com"
+							],
+							"path": [
+								"apis",
+								"rest",
+								"v1.0",
+								"Service.svc",
+								"locations",
+								"reverse"
+							],
+							"query": [
+								{
+									"key": "Coords",
+									"value": "-75.163244%2C40.958188"
+								},
+								{
+									"key": "matchNamedRoadsOnly",
+									"value": "true"
+								},
+								{
+									"key": "maxCleanupMiles",
+									"value": "20"
+								},
+								{
+									"key": "region",
+									"value": "NA"
+								},
+								{
+									"key": "dataset",
+									"value": "Current"
+								},
+								{
+									"key": "timestamp",
+									"value": "2017-01-12%2017%3A43"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "https://developer.trimblemaps.com/restful-apis/routing/route-reports/calc-miles/",
 			"protocolProfileBehavior": {}
 		}
 	],
