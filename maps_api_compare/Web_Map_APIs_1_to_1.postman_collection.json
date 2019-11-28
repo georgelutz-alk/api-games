@@ -6,493 +6,6 @@
 	},
 	"item": [
 		{
-			"name": "HERE_APIs",
-			"item": [
-				{
-					"name": "get-geocode-in-area",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://geocoder.api.here.com/6.2/geocode.json?searchtext=1%20main&mapview=42.3902%2C-71.1293%3B42.3312%2C-71.0228&app_id={{env.appid.here}}&app_code={{env.appcode.here}}",
-							"protocol": "https",
-							"host": [
-								"geocoder",
-								"api",
-								"here",
-								"com"
-							],
-							"path": [
-								"6.2",
-								"geocode.json"
-							],
-							"query": [
-								{
-									"key": "searchtext",
-									"value": "1%20main"
-								},
-								{
-									"key": "mapview",
-									"value": "42.3902%2C-71.1293%3B42.3312%2C-71.0228"
-								},
-								{
-									"key": "app_id",
-									"value": "{{env.appid.here}}"
-								},
-								{
-									"key": "app_code",
-									"value": "{{env.appcode.here}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "get-route",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://route.api.here.com/routing/7.2/calculateroute.json?app_id={{env.appid.here}}&app_code={{env.appcode.here}}&waypoint0=geo!52.5,13.2&waypoint1=geo!52.5,13.45&mode=fastest;car;traffic:disabled",
-							"protocol": "https",
-							"host": [
-								"route",
-								"api",
-								"here",
-								"com"
-							],
-							"path": [
-								"routing",
-								"7.2",
-								"calculateroute.json"
-							],
-							"query": [
-								{
-									"key": "app_id",
-									"value": "{{env.appid.here}}"
-								},
-								{
-									"key": "app_code",
-									"value": "{{env.appcode.here}}"
-								},
-								{
-									"key": "waypoint0",
-									"value": "geo!52.5,13.2"
-								},
-								{
-									"key": "waypoint1",
-									"value": "geo!52.5,13.45"
-								},
-								{
-									"key": "mode",
-									"value": "fastest;car;traffic:disabled"
-								}
-							]
-						},
-						"description": "https://developer.here.com/documentation/routing/dev_guide/topics/request-a-simple-route.html"
-					},
-					"response": []
-				},
-				{
-					"name": "get-truck-route",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://route.api.here.com/routing/7.2/calculateroute.json?app_id={{env.appid.here}}&app_code={{env.appcode.here}}&waypoint0=geo!52.5,13.4&waypoint1=geo!52.5,13.45&mode=fastest;truck;traffic:disabled&limitedWeight=30.5&height=4.25&shippedHazardousGoods=harmfulToWater",
-							"protocol": "https",
-							"host": [
-								"route",
-								"api",
-								"here",
-								"com"
-							],
-							"path": [
-								"routing",
-								"7.2",
-								"calculateroute.json"
-							],
-							"query": [
-								{
-									"key": "app_id",
-									"value": "{{env.appid.here}}"
-								},
-								{
-									"key": "app_code",
-									"value": "{{env.appcode.here}}"
-								},
-								{
-									"key": "waypoint0",
-									"value": "geo!52.5,13.4"
-								},
-								{
-									"key": "waypoint1",
-									"value": "geo!52.5,13.45"
-								},
-								{
-									"key": "mode",
-									"value": "fastest;truck;traffic:disabled"
-								},
-								{
-									"key": "limitedWeight",
-									"value": "30.5"
-								},
-								{
-									"key": "height",
-									"value": "4.25"
-								},
-								{
-									"key": "shippedHazardousGoods",
-									"value": "harmfulToWater"
-								}
-							]
-						},
-						"description": "https://developer.here.com/documentation/routing/dev_guide/topics/request-a-truck-route.html"
-					},
-					"response": []
-				},
-				{
-					"name": "get-map-image",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://image.maps.api.here.com/mia/1.6/mapview?app_id={{env.appid.here}}&app_code={{env.appcode.here}}&c=52.431,13.3845&z=16",
-							"protocol": "https",
-							"host": [
-								"image",
-								"maps",
-								"api",
-								"here",
-								"com"
-							],
-							"path": [
-								"mia",
-								"1.6",
-								"mapview"
-							],
-							"query": [
-								{
-									"key": "app_id",
-									"value": "{{env.appid.here}}"
-								},
-								{
-									"key": "app_code",
-									"value": "{{env.appcode.here}}"
-								},
-								{
-									"key": "c",
-									"value": "52.431,13.3845"
-								},
-								{
-									"key": "z",
-									"value": "16"
-								}
-							]
-						},
-						"description": "https://developer.here.com/documentation/map-image/dev_guide/topics/examples-map-zoom-level.html"
-					},
-					"response": []
-				}
-			],
-			"protocolProfileBehavior": {}
-		},
-		{
-			"name": "Google_APIs",
-			"item": [
-				{
-					"name": "get-places",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=Museum%20of%20Contemporary%20Art%20Australia&inputtype=textquery&fields=photos,formatted_address,name,rating,opening_hours,geometry&key={{env.apikey.google}}",
-							"protocol": "https",
-							"host": [
-								"maps",
-								"googleapis",
-								"com"
-							],
-							"path": [
-								"maps",
-								"api",
-								"place",
-								"findplacefromtext",
-								"json"
-							],
-							"query": [
-								{
-									"key": "input",
-									"value": "Museum%20of%20Contemporary%20Art%20Australia"
-								},
-								{
-									"key": "inputtype",
-									"value": "textquery"
-								},
-								{
-									"key": "fields",
-									"value": "photos,formatted_address,name,rating,opening_hours,geometry"
-								},
-								{
-									"key": "key",
-									"value": "{{env.apikey.google}}"
-								}
-							]
-						},
-						"description": "https://developers.google.com/places/web-service/search?hl=en_US"
-					},
-					"response": []
-				}
-			],
-			"protocolProfileBehavior": {}
-		},
-		{
-			"name": "TrimbleMAPS_APIs",
-			"item": [
-				{
-					"name": "get-routedistance",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "247F91E0D1091A41A313F0B00C2A88A2",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "https://pcmiler.alk.com/apis/rest/v1.0/Service.svc/route/routeReports?stops=-75.173297%2C39.942892%3B-74.83153%2C39.61703%3B-74.438942%2C39.362469&reports=CalcMiles&vehType=Truck&routeType=Shortest&hwyOnly=true&custRdSpeeds=false&overrideClass=FiftyThreeFoot&distUnits=Miles&fuelUnits=Gallons&avoidTolls=true&inclFerryDist=true&openBorders=true&restrOverrides=false&hazMat=Explosives&routeOpt=None&lang=ENUS&hubRouting=false&vehDimUnits=English&vehHeight=13%276%22&vehLength=53%27&vehWidth=96%22&vehWeight=14000&axles=8&truckConfig=none&LCV=false&inclTollData=true&fuelEconLoad=8.5&fuelEconEmpty=11.9&costPerFuelUnit=13&costGHG=5.2&costMaintLoad=12.2&costMaintEmpty=8.9&costTimeLoad=15.5&costTimeEmpty=12.6&exchangeRate=1.01&tollPlan=ezpass&region=NA&dataVersion=Current",
-							"protocol": "https",
-							"host": [
-								"pcmiler",
-								"alk",
-								"com"
-							],
-							"path": [
-								"apis",
-								"rest",
-								"v1.0",
-								"Service.svc",
-								"route",
-								"routeReports"
-							],
-							"query": [
-								{
-									"key": "stops",
-									"value": "-75.173297%2C39.942892%3B-74.83153%2C39.61703%3B-74.438942%2C39.362469"
-								},
-								{
-									"key": "reports",
-									"value": "CalcMiles"
-								},
-								{
-									"key": "vehType",
-									"value": "Truck"
-								},
-								{
-									"key": "routeType",
-									"value": "Shortest"
-								},
-								{
-									"key": "hwyOnly",
-									"value": "true"
-								},
-								{
-									"key": "custRdSpeeds",
-									"value": "false"
-								},
-								{
-									"key": "overrideClass",
-									"value": "FiftyThreeFoot"
-								},
-								{
-									"key": "distUnits",
-									"value": "Miles"
-								},
-								{
-									"key": "fuelUnits",
-									"value": "Gallons"
-								},
-								{
-									"key": "avoidTolls",
-									"value": "true"
-								},
-								{
-									"key": "inclFerryDist",
-									"value": "true"
-								},
-								{
-									"key": "openBorders",
-									"value": "true"
-								},
-								{
-									"key": "restrOverrides",
-									"value": "false"
-								},
-								{
-									"key": "hazMat",
-									"value": "Explosives"
-								},
-								{
-									"key": "routeOpt",
-									"value": "None"
-								},
-								{
-									"key": "lang",
-									"value": "ENUS"
-								},
-								{
-									"key": "hubRouting",
-									"value": "false"
-								},
-								{
-									"key": "vehDimUnits",
-									"value": "English"
-								},
-								{
-									"key": "vehHeight",
-									"value": "13%276%22"
-								},
-								{
-									"key": "vehLength",
-									"value": "53%27"
-								},
-								{
-									"key": "vehWidth",
-									"value": "96%22"
-								},
-								{
-									"key": "vehWeight",
-									"value": "14000"
-								},
-								{
-									"key": "axles",
-									"value": "8"
-								},
-								{
-									"key": "truckConfig",
-									"value": "none"
-								},
-								{
-									"key": "LCV",
-									"value": "false"
-								},
-								{
-									"key": "inclTollData",
-									"value": "true"
-								},
-								{
-									"key": "fuelEconLoad",
-									"value": "8.5"
-								},
-								{
-									"key": "fuelEconEmpty",
-									"value": "11.9"
-								},
-								{
-									"key": "costPerFuelUnit",
-									"value": "13"
-								},
-								{
-									"key": "costGHG",
-									"value": "5.2"
-								},
-								{
-									"key": "costMaintLoad",
-									"value": "12.2"
-								},
-								{
-									"key": "costMaintEmpty",
-									"value": "8.9"
-								},
-								{
-									"key": "costTimeLoad",
-									"value": "15.5"
-								},
-								{
-									"key": "costTimeEmpty",
-									"value": "12.6"
-								},
-								{
-									"key": "exchangeRate",
-									"value": "1.01"
-								},
-								{
-									"key": "tollPlan",
-									"value": "ezpass"
-								},
-								{
-									"key": "region",
-									"value": "NA"
-								},
-								{
-									"key": "dataVersion",
-									"value": "Current"
-								}
-							]
-						}
-					},
-					"response": []
-				}
-			],
-			"description": "https://developer.trimblemaps.com/restful-apis/routing/route-reports/calc-miles/",
-			"protocolProfileBehavior": {}
-		},
-		{
-			"name": "MapBox_APIs",
-			"item": [
-				{
-					"name": "post-navigation",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"name": "Content-Type",
-								"value": "application/x-www-form-urlencoded",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "coordinates",
-									"value": "-117.17282,32.71204;-117.17288,32.71225;-117.17293,32.71244;-117.17292,32.71256;-117.17298,32.712603;-117.17314,32.71259;-117.17334,32.71254",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "https://api.mapbox.com/matching/v5/mapbox/driving?access_token={{env.mapbox.accesstoken}}",
-							"protocol": "https",
-							"host": [
-								"api",
-								"mapbox",
-								"com"
-							],
-							"path": [
-								"matching",
-								"v5",
-								"mapbox",
-								"driving"
-							],
-							"query": [
-								{
-									"key": "access_token",
-									"value": "{{env.mapbox.accesstoken}}"
-								}
-							]
-						},
-						"description": "https://docs.mapbox.com/api/navigation/#directions"
-					},
-					"response": []
-				}
-			],
-			"protocolProfileBehavior": {}
-		},
-		{
 			"name": "get-geocode",
 			"item": [
 				{
@@ -563,6 +76,46 @@
 							]
 						},
 						"description": "https://developer.here.com/projects/PROD-3d4232a1-bf14-4104-a2b4-d76902cd46da"
+					},
+					"response": []
+				},
+				{
+					"name": "get-geocode-in-area-here",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://geocoder.api.here.com/6.2/geocode.json?searchtext=1 main&mapview=42.3902,-71.1293;42.3312,-71.0228&app_id={{env.appid.here}}&app_code={{env.appcode.here}}",
+							"protocol": "https",
+							"host": [
+								"geocoder",
+								"api",
+								"here",
+								"com"
+							],
+							"path": [
+								"6.2",
+								"geocode.json"
+							],
+							"query": [
+								{
+									"key": "searchtext",
+									"value": "1 main"
+								},
+								{
+									"key": "mapview",
+									"value": "42.3902,-71.1293;42.3312,-71.0228"
+								},
+								{
+									"key": "app_id",
+									"value": "{{env.appid.here}}"
+								},
+								{
+									"key": "app_code",
+									"value": "{{env.appcode.here}}"
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -743,6 +296,64 @@
 					"response": []
 				},
 				{
+					"name": "get-directions-here",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://route.api.here.com/routing/7.2/calculateroute.json?app_id={{env.appid.here}}&app_code={{env.appcode.here}}&waypoint0=geo!52.5,13.4&waypoint1=geo!52.5,13.45&mode=fastest;truck;traffic:disabled&limitedWeight=30.5&height=4.25&shippedHazardousGoods=harmfulToWater",
+							"protocol": "https",
+							"host": [
+								"route",
+								"api",
+								"here",
+								"com"
+							],
+							"path": [
+								"routing",
+								"7.2",
+								"calculateroute.json"
+							],
+							"query": [
+								{
+									"key": "app_id",
+									"value": "{{env.appid.here}}"
+								},
+								{
+									"key": "app_code",
+									"value": "{{env.appcode.here}}"
+								},
+								{
+									"key": "waypoint0",
+									"value": "geo!52.5,13.4"
+								},
+								{
+									"key": "waypoint1",
+									"value": "geo!52.5,13.45"
+								},
+								{
+									"key": "mode",
+									"value": "fastest;truck;traffic:disabled"
+								},
+								{
+									"key": "limitedWeight",
+									"value": "30.5"
+								},
+								{
+									"key": "height",
+									"value": "4.25"
+								},
+								{
+									"key": "shippedHazardousGoods",
+									"value": "harmfulToWater"
+								}
+							]
+						},
+						"description": "https://developer.here.com/documentation/routing/dev_guide/topics/request-a-truck-route.html"
+					},
+					"response": []
+				},
+				{
 					"name": "get-directions-mapbox",
 					"request": {
 						"method": "GET",
@@ -789,7 +400,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://pcmiler.alk.com/apis/rest/v1.0/Service.svc//route/routeReports?stops=-75.173297%2C39.942892%3B-74.83153%2C39.61703%3B-74.438942%2C39.362469&reports=Directions&vehType=Truck&routeType=Shortest&hwyOnly=true&custRdSpeeds=false&overrideClass=FiftyThreeFoot&distUnits=Miles&fuelUnits=Gallons&avoidTolls=true&inclFerryDist=true&openBorders=true&restrOverrides=false&hazMat=Explosives&routeOpt=None&lang=ENUS&hubRouting=false&vehDimUnits=English&vehHeight=13%276%22&vehLength=53%27&vehWidth=96%22&vehWeight=14000&axles=8&truckConfig=none&LCV=false&inclTollData=true&fuelEconLoad=8.5&fuelEconEmpty=11.9&costPerFuelUnit=13&costGHG=5.2&costMaintLoad=12.2&costMaintEmpty=8.9&costTimeLoad=15.5&costTimeEmpty=12.6&exchangeRate=1.01&tollPlan=ezpass&region=NA&dataVersion=Current",
+							"raw": "https://pcmiler.alk.com/apis/rest/v1.0/Service.svc//route/routeReports?stops=-75.173297,39.942892;-74.83153,39.61703;-74.438942,39.362469&reports=Directions&vehType=Truck&routeType=Shortest&hwyOnly=true&custRdSpeeds=false&overrideClass=FiftyThreeFoot&distUnits=Miles&fuelUnits=Gallons&avoidTolls=true&inclFerryDist=true&openBorders=true&restrOverrides=false&hazMat=Explosives&routeOpt=None&lang=ENUS&hubRouting=false&vehDimUnits=English&vehHeight=13'6\"&vehLength=53'&vehWidth=96\"&vehWeight=14000&axles=8&truckConfig=none&LCV=false&inclTollData=true&fuelEconLoad=8.5&fuelEconEmpty=11.9&costPerFuelUnit=13&costGHG=5.2&costMaintLoad=12.2&costMaintEmpty=8.9&costTimeLoad=15.5&costTimeEmpty=12.6&exchangeRate=1.01&tollPlan=ezpass&region=NA&dataVersion=Current",
 							"protocol": "https",
 							"host": [
 								"pcmiler",
@@ -808,7 +419,7 @@
 							"query": [
 								{
 									"key": "stops",
-									"value": "-75.173297%2C39.942892%3B-74.83153%2C39.61703%3B-74.438942%2C39.362469"
+									"value": "-75.173297,39.942892;-74.83153,39.61703;-74.438942,39.362469"
 								},
 								{
 									"key": "reports",
@@ -880,15 +491,15 @@
 								},
 								{
 									"key": "vehHeight",
-									"value": "13%276%22"
+									"value": "13'6\""
 								},
 								{
 									"key": "vehLength",
-									"value": "53%27"
+									"value": "53'"
 								},
 								{
 									"key": "vehWidth",
-									"value": "96%22"
+									"value": "96\""
 								},
 								{
 									"key": "vehWeight",
@@ -1008,7 +619,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://reverse.geocoder.api.here.com/6.2/reversegeocode.json?pos=42.3902%2C-71.1293&app_id={{env.appid.here}}&app_code={{env.appcode.here}}&mode=retrieveAll&prox=42.3902%2C-71.1293%2C10",
+							"raw": "https://reverse.geocoder.api.here.com/6.2/reversegeocode.json?pos=42.3902,-71.1293&app_id={{env.appid.here}}&app_code={{env.appcode.here}}&mode=retrieveAll&prox=42.3902,-71.1293,10",
 							"protocol": "https",
 							"host": [
 								"reverse",
@@ -1024,7 +635,7 @@
 							"query": [
 								{
 									"key": "pos",
-									"value": "42.3902%2C-71.1293"
+									"value": "42.3902,-71.1293"
 								},
 								{
 									"key": "app_id",
@@ -1040,7 +651,7 @@
 								},
 								{
 									"key": "prox",
-									"value": "42.3902%2C-71.1293%2C10"
+									"value": "42.3902,-71.1293,10"
 								}
 							]
 						},
@@ -1089,7 +700,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://pcmiler.alk.com/apis/rest/v1.0/Service.svc/locations/reverse?Coords=-75.163244%2C40.958188&matchNamedRoadsOnly=true&maxCleanupMiles=20&region=NA&dataset=Current&timestamp=2017-01-12%2017%3A43",
+							"raw": "https://pcmiler.alk.com/apis/rest/v1.0/Service.svc/locations/reverse?Coords=-75.163244,40.958188&matchNamedRoadsOnly=true&maxCleanupMiles=20&region=NA&dataset=Current&timestamp=2017-01-12 17:43",
 							"protocol": "https",
 							"host": [
 								"pcmiler",
@@ -1107,7 +718,7 @@
 							"query": [
 								{
 									"key": "Coords",
-									"value": "-75.163244%2C40.958188"
+									"value": "-75.163244,40.958188"
 								},
 								{
 									"key": "matchNamedRoadsOnly",
@@ -1127,7 +738,171 @@
 								},
 								{
 									"key": "timestamp",
-									"value": "2017-01-12%2017%3A43"
+									"value": "2017-01-12 17:43"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "get-places",
+			"item": [
+				{
+					"name": "get-places-google",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=Museum of Contemporary Art Australia&inputtype=textquery&fields=photos,formatted_address,name,rating,opening_hours,geometry&key={{env.apikey.google}}",
+							"protocol": "https",
+							"host": [
+								"maps",
+								"googleapis",
+								"com"
+							],
+							"path": [
+								"maps",
+								"api",
+								"place",
+								"findplacefromtext",
+								"json"
+							],
+							"query": [
+								{
+									"key": "input",
+									"value": "Museum of Contemporary Art Australia"
+								},
+								{
+									"key": "inputtype",
+									"value": "textquery"
+								},
+								{
+									"key": "fields",
+									"value": "photos,formatted_address,name,rating,opening_hours,geometry"
+								},
+								{
+									"key": "key",
+									"value": "{{env.apikey.google}}"
+								}
+							]
+						},
+						"description": "https://developers.google.com/places/web-service/search?hl=en_US"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "get-map-image",
+			"item": [
+				{
+					"name": "get-map-image-here",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://image.maps.api.here.com/mia/1.6/mapview?app_id={{env.appid.here}}&app_code={{env.appcode.here}}&c=52.431,13.3845&z=16",
+							"protocol": "https",
+							"host": [
+								"image",
+								"maps",
+								"api",
+								"here",
+								"com"
+							],
+							"path": [
+								"mia",
+								"1.6",
+								"mapview"
+							],
+							"query": [
+								{
+									"key": "app_id",
+									"value": "{{env.appid.here}}"
+								},
+								{
+									"key": "app_code",
+									"value": "{{env.appcode.here}}"
+								},
+								{
+									"key": "c",
+									"value": "52.431,13.3845"
+								},
+								{
+									"key": "z",
+									"value": "16"
+								}
+							]
+						},
+						"description": "https://developer.here.com/documentation/map-image/dev_guide/topics/examples-map-zoom-level.html"
+					},
+					"response": []
+				},
+				{
+					"name": "get-map-image-trimble",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://pcmiler.alk.com/apis/rest/v1.0/Service.svc/map?pt1=-74.654726,40.38825&pt2=-76.12345,42.12345&style=Modern&format=image/jpeg&height=640&SRS=EPSG:900913&width=600&region=NA&dataset=Current&authtoken={{env.apikey.trimble}}",
+							"protocol": "https",
+							"host": [
+								"pcmiler",
+								"alk",
+								"com"
+							],
+							"path": [
+								"apis",
+								"rest",
+								"v1.0",
+								"Service.svc",
+								"map"
+							],
+							"query": [
+								{
+									"key": "pt1",
+									"value": "-74.654726,40.38825"
+								},
+								{
+									"key": "pt2",
+									"value": "-76.12345,42.12345"
+								},
+								{
+									"key": "style",
+									"value": "Modern"
+								},
+								{
+									"key": "format",
+									"value": "image/jpeg"
+								},
+								{
+									"key": "height",
+									"value": "640"
+								},
+								{
+									"key": "SRS",
+									"value": "EPSG:900913"
+								},
+								{
+									"key": "width",
+									"value": "600"
+								},
+								{
+									"key": "region",
+									"value": "NA"
+								},
+								{
+									"key": "dataset",
+									"value": "Current"
+								},
+								{
+									"key": "authtoken",
+									"value": "{{env.apikey.trimble}}"
 								}
 							]
 						}
