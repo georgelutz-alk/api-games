@@ -14,7 +14,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://maps.googleapis.com/maps/api/geocode/json?address=425+W+Randolph+Chicago&key={{env.apikey.google}}",
+							"raw": "https://maps.googleapis.com/maps/api/geocode/json?address=1 Independence Way 08540&key={{env.apikey.google}}",
 							"protocol": "https",
 							"host": [
 								"maps",
@@ -30,7 +30,7 @@
 							"query": [
 								{
 									"key": "address",
-									"value": "425+W+Randolph+Chicago"
+									"value": "1 Independence Way 08540"
 								},
 								{
 									"key": "key",
@@ -48,7 +48,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://geocoder.api.here.com/6.2/geocode.json?app_id={{env.appid.here}}&app_code={{env.appcode.here}}&searchtext=425+W+Randolph+Chicago",
+							"raw": "https://geocoder.api.here.com/6.2/geocode.json?app_id={{env.appid.here}}&app_code={{env.appcode.here}}&searchtext=1 Independence Way 08540",
 							"protocol": "https",
 							"host": [
 								"geocoder",
@@ -71,7 +71,7 @@
 								},
 								{
 									"key": "searchtext",
-									"value": "425+W+Randolph+Chicago"
+									"value": "1 Independence Way 08540"
 								}
 							]
 						},
@@ -80,12 +80,12 @@
 					"response": []
 				},
 				{
-					"name": "get-geocode-in-area-here",
+					"name": "get-geocode-here-in-area",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://geocoder.api.here.com/6.2/geocode.json?searchtext=1 main&mapview=42.3902,-71.1293;42.3312,-71.0228&app_id={{env.appid.here}}&app_code={{env.appcode.here}}",
+							"raw": "https://geocoder.api.here.com/6.2/geocode.json?searchtext=1 Independence Way 08540&mapview=42.3902,-71.1293;42.3312,-71.0228&app_id={{env.appid.here}}&app_code={{env.appcode.here}}",
 							"protocol": "https",
 							"host": [
 								"geocoder",
@@ -100,7 +100,7 @@
 							"query": [
 								{
 									"key": "searchtext",
-									"value": "1 main"
+									"value": "1 Independence Way 08540"
 								},
 								{
 									"key": "mapview",
@@ -125,7 +125,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.mapbox.com/geocoding/v5/mapbox.places/425+W+Randolph+Chicago.json?access_token={{env.mapbox.accesstoken}}\n",
+							"raw": "https://api.mapbox.com/geocoding/v5/mapbox.places/1 Independence Way 08540.json?access_token={{env.mapbox.accesstoken}}\n",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -136,7 +136,7 @@
 								"geocoding",
 								"v5",
 								"mapbox.places",
-								"425+W+Randolph+Chicago.json"
+								"1 Independence Way 08540.json"
 							],
 							"query": [
 								{
@@ -160,7 +160,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://pcmiler.alk.com/apis/rest/v1.0/Service.svc/locations?street=425+W+Randolph&city=Chicago",
+							"raw": "https://pcmiler.alk.com/apis/rest/v1.0/Service.svc/locations?street=1 independence way&city=Princeton",
 							"protocol": "https",
 							"host": [
 								"pcmiler",
@@ -177,11 +177,11 @@
 							"query": [
 								{
 									"key": "street",
-									"value": "425+W+Randolph"
+									"value": "1 independence way"
 								},
 								{
 									"key": "city",
-									"value": "Chicago"
+									"value": "Princeton"
 								},
 								{
 									"key": "state",
@@ -252,6 +252,29 @@
 					"response": []
 				}
 			],
+			"description": "search for: 1 independence way 08540",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "a3da645f-7524-4391-9903-f51e59e337d2",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "913e97a5-60bb-45f5-9b3b-79e7e338acf5",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
 			"protocolProfileBehavior": {}
 		},
 		{
@@ -263,7 +286,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://maps.googleapis.com/maps/api/directions/json?origin=Disneyland&destination=Universal+Studios+Hollywood&key={{env.apikey.google}}",
+							"raw": "https://maps.googleapis.com/maps/api/directions/json?origin=1000 Herrontown Road 08540&destination=1 independence way 08540&key={{env.apikey.google}}",
 							"protocol": "https",
 							"host": [
 								"maps",
@@ -279,11 +302,11 @@
 							"query": [
 								{
 									"key": "origin",
-									"value": "Disneyland"
+									"value": "1000 Herrontown Road 08540"
 								},
 								{
 									"key": "destination",
-									"value": "Universal+Studios+Hollywood"
+									"value": "1 independence way 08540"
 								},
 								{
 									"key": "key",
@@ -301,7 +324,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://route.api.here.com/routing/7.2/calculateroute.json?app_id={{env.appid.here}}&app_code={{env.appcode.here}}&waypoint0=geo!52.5,13.4&waypoint1=geo!52.5,13.45&mode=fastest;truck;traffic:disabled&limitedWeight=30.5&height=4.25&shippedHazardousGoods=harmfulToWater",
+							"raw": "https://route.api.here.com/routing/7.2/calculateroute.json?app_id={{env.appid.here}}&app_code={{env.appcode.here}}&waypoint0=geo!40.3888695,-74.6565143&waypoint1=geo!40.3611904,-74.599038&mode=fastest;truck;traffic:disabled&limitedWeight=30.5&height=4.25&shippedHazardousGoods=harmfulToWater",
 							"protocol": "https",
 							"host": [
 								"route",
@@ -325,11 +348,11 @@
 								},
 								{
 									"key": "waypoint0",
-									"value": "geo!52.5,13.4"
+									"value": "geo!40.3888695,-74.6565143"
 								},
 								{
 									"key": "waypoint1",
-									"value": "geo!52.5,13.45"
+									"value": "geo!40.3611904,-74.599038"
 								},
 								{
 									"key": "mode",
@@ -359,7 +382,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.mapbox.com/directions/v5/mapbox/driving/-122.42,37.78;-77.03,38.91?access_token={{env.mapbox.accesstoken}}\n",
+							"raw": "https://api.mapbox.com/directions/v5/mapbox/driving/-74.6565143,40.3888695;-74.599038,40.3611904?access_token={{env.mapbox.accesstoken}}\n",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -371,7 +394,7 @@
 								"v5",
 								"mapbox",
 								"driving",
-								"-122.42,37.78;-77.03,38.91"
+								"-74.6565143,40.3888695;-74.599038,40.3611904"
 							],
 							"query": [
 								{
@@ -400,7 +423,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://pcmiler.alk.com/apis/rest/v1.0/Service.svc//route/routeReports?stops=-75.173297,39.942892;-74.83153,39.61703;-74.438942,39.362469&reports=Directions&vehType=Truck&routeType=Shortest&hwyOnly=true&custRdSpeeds=false&overrideClass=FiftyThreeFoot&distUnits=Miles&fuelUnits=Gallons&avoidTolls=true&inclFerryDist=true&openBorders=true&restrOverrides=false&hazMat=Explosives&routeOpt=None&lang=ENUS&hubRouting=false&vehDimUnits=English&vehHeight=13'6\"&vehLength=53'&vehWidth=96\"&vehWeight=14000&axles=8&truckConfig=none&LCV=false&inclTollData=true&fuelEconLoad=8.5&fuelEconEmpty=11.9&costPerFuelUnit=13&costGHG=5.2&costMaintLoad=12.2&costMaintEmpty=8.9&costTimeLoad=15.5&costTimeEmpty=12.6&exchangeRate=1.01&tollPlan=ezpass&region=NA&dataVersion=Current",
+							"raw": "https://pcmiler.alk.com/apis/rest/v1.0/Service.svc//route/routeReports?stops=-74.6565143,40.3888695;-74.599038,40.3611904&reports=Directions&vehType=Truck&hwyOnly=true&custRdSpeeds=false&overrideClass=FiftyThreeFoot&distUnits=Miles&fuelUnits=Gallons&avoidTolls=true&inclFerryDist=true&openBorders=true&restrOverrides=false&hazMat=Explosives&routeOpt=None&lang=ENUS&hubRouting=false&vehDimUnits=English&vehHeight=13'6\"&vehLength=53'&vehWidth=96\"&vehWeight=14000&axles=8&truckConfig=none&LCV=false&inclTollData=true&fuelEconLoad=8.5&fuelEconEmpty=11.9&costPerFuelUnit=13&costGHG=5.2&costMaintLoad=12.2&costMaintEmpty=8.9&costTimeLoad=15.5&costTimeEmpty=12.6&exchangeRate=1.01&tollPlan=ezpass&region=NA&dataVersion=Current",
 							"protocol": "https",
 							"host": [
 								"pcmiler",
@@ -419,7 +442,7 @@
 							"query": [
 								{
 									"key": "stops",
-									"value": "-75.173297,39.942892;-74.83153,39.61703;-74.438942,39.362469"
+									"value": "-74.6565143,40.3888695;-74.599038,40.3611904"
 								},
 								{
 									"key": "reports",
@@ -431,7 +454,8 @@
 								},
 								{
 									"key": "routeType",
-									"value": "Shortest"
+									"value": "Shortest",
+									"disabled": true
 								},
 								{
 									"key": "hwyOnly",
@@ -575,6 +599,29 @@
 					"response": []
 				}
 			],
+			"description": "from: 1000 Herronton Road, Princeton\nto: 1 indepence way, Princeton ",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "85d798c7-daf0-4bb1-9029-03b80cf50987",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "aa98b7fd-1002-4701-89c0-965f4cbf74c1",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
 			"protocolProfileBehavior": {}
 		},
 		{
@@ -582,11 +629,23 @@
 			"item": [
 				{
 					"name": "get-reverse-geocode-google",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "f80f631c-29f9-4306-9946-05ac967433e5",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key={{env.apikey.google}}",
+							"raw": "https://maps.googleapis.com/maps/api/geocode/json?latlng=40.38835,-74.655603&key={{env.apikey.google}}",
 							"protocol": "https",
 							"host": [
 								"maps",
@@ -602,7 +661,7 @@
 							"query": [
 								{
 									"key": "latlng",
-									"value": "40.714224,-73.961452"
+									"value": "40.38835,-74.655603"
 								},
 								{
 									"key": "key",
@@ -619,7 +678,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://reverse.geocoder.api.here.com/6.2/reversegeocode.json?pos=42.3902,-71.1293&app_id={{env.appid.here}}&app_code={{env.appcode.here}}&mode=retrieveAll&prox=42.3902,-71.1293,10",
+							"raw": "https://reverse.geocoder.api.here.com/6.2/reversegeocode.json?pos=40.38835,-74.655603&app_id={{env.appid.here}}&app_code={{env.appcode.here}}&mode=retrieveAll&prox=40.38835,-74.655603,10",
 							"protocol": "https",
 							"host": [
 								"reverse",
@@ -635,7 +694,7 @@
 							"query": [
 								{
 									"key": "pos",
-									"value": "42.3902,-71.1293"
+									"value": "40.38835,-74.655603"
 								},
 								{
 									"key": "app_id",
@@ -651,7 +710,7 @@
 								},
 								{
 									"key": "prox",
-									"value": "42.3902,-71.1293,10"
+									"value": "40.38835,-74.655603,10"
 								}
 							]
 						},
@@ -665,7 +724,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.mapbox.com/geocoding/v5/mapbox.places/-73.989,40.733.json?access_token={{env.mapbox.accesstoken}}\n",
+							"raw": "https://api.mapbox.com/geocoding/v5/mapbox.places/-74.655603,40.38835.json?access_token={{env.mapbox.accesstoken}}\n",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -676,7 +735,7 @@
 								"geocoding",
 								"v5",
 								"mapbox.places",
-								"-73.989,40.733.json"
+								"-74.655603,40.38835.json"
 							],
 							"query": [
 								{
@@ -700,7 +759,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://pcmiler.alk.com/apis/rest/v1.0/Service.svc/locations/reverse?Coords=-75.163244,40.958188&matchNamedRoadsOnly=true&maxCleanupMiles=20&region=NA&dataset=Current&timestamp=2017-01-12 17:43",
+							"raw": "https://pcmiler.alk.com/apis/rest/v1.0/Service.svc/locations/reverse?Coords=-74.655603,40.38835&matchNamedRoadsOnly=true&maxCleanupMiles=20&region=NA&dataset=Current&timestamp=2017-01-12 17:43",
 							"protocol": "https",
 							"host": [
 								"pcmiler",
@@ -718,7 +777,7 @@
 							"query": [
 								{
 									"key": "Coords",
-									"value": "-75.163244,40.958188"
+									"value": "-74.655603,40.38835"
 								},
 								{
 									"key": "matchNamedRoadsOnly",
@@ -746,6 +805,29 @@
 					"response": []
 				}
 			],
+			"description": "search for: coords of 1000 Herrontown Rd, Princeton NJ 08540\n\n40.38835,-74.655603",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "24451737-e59c-4b00-bb6e-39b71300d24b",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "863425d0-ace5-448a-b832-28a2e407aaec",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
 			"protocolProfileBehavior": {}
 		},
 		{
@@ -757,7 +839,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=Museum of Contemporary Art Australia&inputtype=textquery&fields=photos,formatted_address,name,rating,opening_hours,geometry&key={{env.apikey.google}}",
+							"raw": "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=Empire State Building&inputtype=textquery&fields=photos,formatted_address,name,rating,opening_hours,geometry&key={{env.apikey.google}}",
 							"protocol": "https",
 							"host": [
 								"maps",
@@ -774,7 +856,7 @@
 							"query": [
 								{
 									"key": "input",
-									"value": "Museum of Contemporary Art Australia"
+									"value": "Empire State Building"
 								},
 								{
 									"key": "inputtype",
@@ -793,6 +875,137 @@
 						"description": "https://developers.google.com/places/web-service/search?hl=en_US"
 					},
 					"response": []
+				},
+				{
+					"name": "get-places-here",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://places.cit.api.here.com/places/v1/autosuggest?at=40.74917,-73.98529&q=Empire State Building&app_id={{env.appid.here}}&app_code={{env.appcode.here}}",
+							"protocol": "https",
+							"host": [
+								"places",
+								"cit",
+								"api",
+								"here",
+								"com"
+							],
+							"path": [
+								"places",
+								"v1",
+								"autosuggest"
+							],
+							"query": [
+								{
+									"key": "at",
+									"value": "40.74917,-73.98529"
+								},
+								{
+									"key": "q",
+									"value": "Empire State Building"
+								},
+								{
+									"key": "app_id",
+									"value": "{{env.appid.here}}"
+								},
+								{
+									"key": "app_code",
+									"value": "{{env.appcode.here}}"
+								}
+							]
+						},
+						"description": "https://developer.here.com/documentation/places/dev_guide/topics/quick-start-find-text-string.html"
+					},
+					"response": []
+				},
+				{
+					"name": "get-places-mapbox",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.mapbox.com/geocoding/v5/mapbox.places/Empire State Building.json?access_token={{env.mapbox.accesstoken}}\n&type=poi",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mapbox",
+								"com"
+							],
+							"path": [
+								"geocoding",
+								"v5",
+								"mapbox.places",
+								"Empire State Building.json"
+							],
+							"query": [
+								{
+									"key": "access_token",
+									"value": "{{env.mapbox.accesstoken}}\n"
+								},
+								{
+									"key": "type",
+									"value": "poi"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-places-trimble-ss",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://singlesearch.alk.com/na/api/search?authToken={{env.apikey.trimble}}&query=Empire State Building",
+							"protocol": "https",
+							"host": [
+								"singlesearch",
+								"alk",
+								"com"
+							],
+							"path": [
+								"na",
+								"api",
+								"search"
+							],
+							"query": [
+								{
+									"key": "authToken",
+									"value": "{{env.apikey.trimble}}"
+								},
+								{
+									"key": "query",
+									"value": "Empire State Building"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "search for: Empire State Building",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "0e72e0d3-08a8-48be-b080-73a6d2a08520",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "1c156485-98a2-4cd3-8b5a-f23d6319adf5",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
 				}
 			],
 			"protocolProfileBehavior": {}
@@ -903,6 +1116,38 @@
 								{
 									"key": "authtoken",
 									"value": "{{env.apikey.trimble}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-map-image-mapbox",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/-122.4241,37.78,14.25,0,60/600x600?access_token={{env.mapbox.accesstoken}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mapbox",
+								"com"
+							],
+							"path": [
+								"styles",
+								"v1",
+								"mapbox",
+								"streets-v11",
+								"static",
+								"-122.4241,37.78,14.25,0,60",
+								"600x600"
+							],
+							"query": [
+								{
+									"key": "access_token",
+									"value": "{{env.mapbox.accesstoken}}"
 								}
 							]
 						}
